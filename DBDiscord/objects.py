@@ -75,6 +75,8 @@ class Category:
             dd: DB = await self.getDB(ca.name)
             ccs.append(dd)
         return ccs
+    
+#        ccs = [await self.getDB(ca.name) for ca in self.category.text_channels]
 
 
 class Server:
